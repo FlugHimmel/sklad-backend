@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.installed.cfg
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+/staticfiles/
+/media/
+local_settings.py
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Backups
+backups/
+*.sql
+*.sql.gz
+*.dump
+*.dump.gz
+*.tar.gz
+pre-*.json
+*_backup_*.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Tests / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# OS
+Thumbs.db
