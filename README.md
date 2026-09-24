@@ -41,7 +41,7 @@ Let's Encrypt · JWT (access 8ч / refresh 14 дней).
 
 ## Установка
 
-~~bash
+```bash
 git clone https://github.com/FlugHimmel/sklad-backend.git
 cd sklad-backend
 python3 -m venv .venv
@@ -54,7 +54,7 @@ cp .env.example .env
 python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver
-~~
+```
 
 ## Основные эндпоинты
 
@@ -81,7 +81,7 @@ python manage.py runserver
 
 ## Структура
 
-~~
+```
 accounts/           — пользователи, роли, JWT
 audit/              — журнал изменений
 company_settings/   — реквизиты для PDF (2 блока: обычный и литейка)
@@ -91,13 +91,13 @@ orders/             — заказы, план/факт, импорт из Excel
 warehouse/          — тары, операции, отчёты, PDF, накладные
 scripts/            — backup, api_check, run_tests
 templates/          — docx-шаблон упаковочного листа
-~~
+```
 
 ## Тесты
 
-~~bash
+```bash
 .venv/bin/python manage.py full_test
-~~
+```
 
 Полный тест: 40 проверок (инфра, модели, алиасы, авторизация, все API,
 отчёты, resolve). Пароль читается из `TEST_ADMIN_PASSWORD` (по умолчанию `admin`).
@@ -108,9 +108,9 @@ templates/          — docx-шаблон упаковочного листа
 
 Cron (3:00 ночи):
 
-~~
+```
 0 3 * * * /bin/bash /path/to/scripts/backup_db.sh
-~~
+```
 
 ## Лицензия
 
